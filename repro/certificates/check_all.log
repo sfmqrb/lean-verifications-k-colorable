@@ -1,0 +1,132 @@
+dag_k3_C1.gen.txt: OK
+dag_k3_C2.gen.txt: OK
+dag_k3_C3.gen.txt: OK
+dag_k3_C4.gen.txt: OK
+dag_k3_C5.gen.txt: OK
+dag_k3_C6.gen.txt: OK
+dag_k3_C7.gen.txt: OK
+dag_k3_C8.gen.txt: OK
+dag_k3_C9.gen.txt: OK
+dag_k4_C1.gen.txt: OK
+dag_k4_C2.gen.txt: OK
+dag_k4_C3.gen.txt: OK
+dag_k4_C4.gen.txt: OK
+dag_k4_C5.gen.txt: OK
+dag_k4_C6.gen.txt: OK
+dag_k4_C7.gen.txt: OK
+dag_k4_C8.gen.txt: OK
+dag_k4_C9.gen.txt: OK
+dag_k4_C10.gen.txt: OK
+dag_k5_C1.gen.txt: OK
+dag_k5_C2.gen.txt: OK
+dag_k5_C3.gen.txt: OK
+dag_k5_C4.gen.txt: OK
+dag_k5_C5.gen.txt: OK
+dag_k5_C6.gen.txt: OK
+dag_k5_C7.gen.txt: OK
+dag_k5_C8.gen.txt: OK
+dag_k5_C9.gen.txt: OK
+dag_k5_C10.gen.txt: OK
+dag_k5_C11.gen.txt: OK
+dag_k5_C12.gen.txt: OK
+dag_k6_C1.gen.txt: OK
+dag_k6_C2.gen.txt: OK
+dag_k6_C3.gen.txt: OK
+dag_k6_C4.gen.txt: OK
+dag_k6_C5.gen.txt: OK
+dag_k6_C6.gen.txt: OK
+dag_k6_C7.gen.txt: OK
+dag_k6_C8.gen.txt: OK
+dag_k6_C9.gen.txt: OK
+dag_k6_C10.gen.txt: OK
+dag_k6_C11.gen.txt: OK
+dag_k6_C12.gen.txt: OK
+dag_k6_C13.gen.txt: OK
+one_m4_C2_ADV.txt: OK
+one_m4_C3_ALG.txt: OK
+one_m5_C3_ADV.txt: OK
+one_m5_C4_ALG.txt: OK
+one_m6_C3_ADV.txt: OK
+one_m6_C4_ALG.txt: OK
+one_m7_C4_ADV.txt: OK
+one_m7_C5_ALG.txt: OK
+one_m8_C5_ADV.txt: OK
+one_m8_C6_ALG.txt: OK
+one_m9_C5_ADV.txt: OK
+one_m9_C6_ALG.txt: OK
+one_m10_C7_ALG.txt: OK
+one_m11_C7_ALG.txt: OK
+check_adversary_dag.py: OK
+check_one_level.cpp: OK
+OK dag_k3_C1.gen.txt [dag]: k=3 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k3_C2.gen.txt [dag]: k=3 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k3_C3.gen.txt [dag]: k=3 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k3_C4.gen.txt [dag]: k=3 forest=0: the adversary forces 4 colours with at most 5 vertices (height 5; lemmas 5, P 5, W 2, R 5, colourings tested 7)
+OK dag_k3_C5.gen.txt [dag]: k=3 forest=0: the adversary forces 5 colours with at most 7 vertices (height 7; lemmas 11, P 11, W 6, R 11, colourings tested 20)
+OK dag_k3_C6.gen.txt [dag]: k=3 forest=0: the adversary forces 6 colours with at most 9 vertices (height 9; lemmas 22, P 22, W 10, R 29, colourings tested 62)
+OK dag_k3_C7.gen.txt [dag]: k=3 forest=0: the adversary forces 7 colours with at most 11 vertices (height 11; lemmas 48, P 48, W 24, R 72, colourings tested 195)
+OK dag_k3_C8.gen.txt [dag]: k=3 forest=0: the adversary forces 8 colours with at most 13 vertices (height 13; lemmas 336, P 336, W 207, R 501, colourings tested 1923)
+OK dag_k3_C9.gen.txt [dag]: k=3 forest=0: the adversary forces 9 colours with at most 15 vertices (height 15; lemmas 2863, P 2863, W 1809, R 4269, colourings tested 20593)
+OK dag_k4_C10.gen.txt [dag]: k=4 forest=0: the adversary forces 10 colours with at most 16 vertices (height 16; lemmas 824, P 824, W 601, R 1206, colourings tested 3289)
+OK dag_k4_C1.gen.txt [dag]: k=4 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k4_C2.gen.txt [dag]: k=4 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k4_C3.gen.txt [dag]: k=4 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k4_C4.gen.txt [dag]: k=4 forest=0: the adversary forces 4 colours with at most 4 vertices (height 4; lemmas 4, P 4, W 1, R 3, colourings tested 3)
+OK dag_k4_C5.gen.txt [dag]: k=4 forest=0: the adversary forces 5 colours with at most 6 vertices (height 6; lemmas 6, P 6, W 2, R 6, colourings tested 8)
+OK dag_k4_C6.gen.txt [dag]: k=4 forest=0: the adversary forces 6 colours with at most 8 vertices (height 8; lemmas 11, P 11, W 5, R 12, colourings tested 21)
+OK dag_k4_C7.gen.txt [dag]: k=4 forest=0: the adversary forces 7 colours with at most 10 vertices (height 10; lemmas 22, P 22, W 11, R 25, colourings tested 51)
+OK dag_k4_C8.gen.txt [dag]: k=4 forest=0: the adversary forces 8 colours with at most 12 vertices (height 12; lemmas 41, P 41, W 18, R 54, colourings tested 122)
+OK dag_k4_C9.gen.txt [dag]: k=4 forest=0: the adversary forces 9 colours with at most 14 vertices (height 14; lemmas 208, P 208, W 136, R 315, colourings tested 842)
+OK dag_k5_C10.gen.txt [dag]: k=5 forest=0: the adversary forces 10 colours with at most 15 vertices (height 15; lemmas 149, P 149, W 91, R 178, colourings tested 525)
+OK dag_k5_C11.gen.txt [dag]: k=5 forest=0: the adversary forces 11 colours with at most 17 vertices (height 17; lemmas 460, P 460, W 299, R 569, colourings tested 2017)
+OK dag_k5_C12.gen.txt [dag]: k=5 forest=0: the adversary forces 12 colours with at most 19 vertices (height 19; lemmas 1461, P 1461, W 1026, R 1955, colourings tested 7066)
+OK dag_k5_C1.gen.txt [dag]: k=5 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k5_C2.gen.txt [dag]: k=5 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k5_C3.gen.txt [dag]: k=5 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k5_C4.gen.txt [dag]: k=5 forest=0: the adversary forces 4 colours with at most 4 vertices (height 4; lemmas 4, P 4, W 1, R 3, colourings tested 3)
+OK dag_k5_C5.gen.txt [dag]: k=5 forest=0: the adversary forces 5 colours with at most 5 vertices (height 5; lemmas 5, P 5, W 1, R 4, colourings tested 4)
+OK dag_k5_C6.gen.txt [dag]: k=5 forest=0: the adversary forces 6 colours with at most 7 vertices (height 7; lemmas 7, P 7, W 2, R 7, colourings tested 9)
+OK dag_k5_C7.gen.txt [dag]: k=5 forest=0: the adversary forces 7 colours with at most 9 vertices (height 9; lemmas 14, P 14, W 7, R 15, colourings tested 26)
+OK dag_k5_C8.gen.txt [dag]: k=5 forest=0: the adversary forces 8 colours with at most 11 vertices (height 11; lemmas 27, P 27, W 13, R 34, colourings tested 69)
+OK dag_k5_C9.gen.txt [dag]: k=5 forest=0: the adversary forces 9 colours with at most 13 vertices (height 13; lemmas 58, P 58, W 31, R 75, colourings tested 187)
+OK dag_k6_C10.gen.txt [dag]: k=6 forest=0: the adversary forces 10 colours with at most 14 vertices (height 14; lemmas 67, P 67, W 34, R 78, colourings tested 448)
+OK dag_k6_C11.gen.txt [dag]: k=6 forest=0: the adversary forces 11 colours with at most 16 vertices (height 16; lemmas 145, P 145, W 78, R 176, colourings tested 964)
+OK dag_k6_C12.gen.txt [dag]: k=6 forest=0: the adversary forces 12 colours with at most 18 vertices (height 18; lemmas 132, P 132, W 74, R 173, colourings tested 605)
+OK dag_k6_C13.gen.txt [dag]: k=6 forest=0: the adversary forces 13 colours with at most 20 vertices (height 20; lemmas 940, P 940, W 593, R 1157, colourings tested 4784)
+OK dag_k6_C1.gen.txt [dag]: k=6 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k6_C2.gen.txt [dag]: k=6 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k6_C3.gen.txt [dag]: k=6 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k6_C4.gen.txt [dag]: k=6 forest=0: the adversary forces 4 colours with at most 4 vertices (height 4; lemmas 4, P 4, W 1, R 3, colourings tested 3)
+OK dag_k6_C5.gen.txt [dag]: k=6 forest=0: the adversary forces 5 colours with at most 5 vertices (height 5; lemmas 5, P 5, W 1, R 4, colourings tested 4)
+OK dag_k6_C6.gen.txt [dag]: k=6 forest=0: the adversary forces 6 colours with at most 6 vertices (height 6; lemmas 6, P 6, W 1, R 5, colourings tested 5)
+OK dag_k6_C7.gen.txt [dag]: k=6 forest=0: the adversary forces 7 colours with at most 8 vertices (height 8; lemmas 13, P 13, W 2, R 12, colourings tested 50)
+OK dag_k6_C8.gen.txt [dag]: k=6 forest=0: the adversary forces 8 colours with at most 10 vertices (height 10; lemmas 18, P 18, W 5, R 18, colourings tested 94)
+OK dag_k6_C9.gen.txt [dag]: k=6 forest=0: the adversary forces 9 colours with at most 12 vertices (height 12; lemmas 33, P 33, W 15, R 35, colourings tested 213)
+loaded 152 entries
+check one m=10 C=7 b=9 8 7 6 5 4 3 2 1 1  claim=algorithm_survives_with_7 result=VERIFIED visited=256 children=257 entries=152
+loaded 1169 entries
+check one m=11 C=7 b=10 9 8 7 6 5 4 3 2 1 1  claim=algorithm_survives_with_7 result=VERIFIED visited=2996 children=2998 entries=1169
+loaded 3 entries
+check one m=4 C=3 b=3 2 1 1  claim=algorithm_survives_with_3 result=VERIFIED visited=5 children=5 entries=3
+loaded 4 entries
+check one m=5 C=4 b=4 3 2 1 1  claim=algorithm_survives_with_4 result=VERIFIED visited=6 children=6 entries=4
+loaded 22 entries
+check one m=6 C=4 b=5 4 3 2 1 1  claim=algorithm_survives_with_4 result=VERIFIED visited=31 children=32 entries=22
+loaded 23 entries
+check one m=7 C=5 b=6 5 4 3 2 1 1  claim=algorithm_survives_with_5 result=VERIFIED visited=32 children=33 entries=23
+loaded 24 entries
+check one m=8 C=6 b=7 6 5 4 3 2 1 1  claim=algorithm_survives_with_6 result=VERIFIED visited=33 children=34 entries=24
+loaded 151 entries
+check one m=9 C=6 b=8 7 6 5 4 3 2 1 1  claim=algorithm_survives_with_6 result=VERIFIED visited=255 children=256 entries=151
+loaded 5 entries
+check one m=4 C=2 b=3 2 1 1  claim=adversary_forces_3 result=VERIFIED visited=7 children=6 entries=5
+loaded 22 entries
+check one m=5 C=3 b=4 3 2 1 1  claim=adversary_forces_4 result=VERIFIED visited=44 children=43 entries=22
+loaded 42 entries
+check one m=6 C=3 b=5 4 3 2 1 1  claim=adversary_forces_4 result=VERIFIED visited=69 children=68 entries=42
+loaded 446 entries
+check one m=7 C=4 b=6 5 4 3 2 1 1  claim=adversary_forces_5 result=VERIFIED visited=933 children=932 entries=446
+loaded 8392 entries
+check one m=8 C=5 b=7 6 5 4 3 2 1 1  claim=adversary_forces_6 result=VERIFIED visited=24409 children=24408 entries=8392
+loaded 41243 entries
+check one m=9 C=5 b=8 7 6 5 4 3 2 1 1  claim=adversary_forces_6 result=VERIFIED visited=92810 children=92809 entries=41243

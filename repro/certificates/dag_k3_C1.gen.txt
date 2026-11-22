@@ -1,0 +1,10 @@
+H k=3 forest=0 C=1 N=1
+L 0 0 0
+V
+G
+P 0
+C 0 1
+W 0
+/L
+ROOT 0
+E

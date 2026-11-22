@@ -1,0 +1,367 @@
+== check_posets
+|P_0(2)| = 2
+|P_1(2)| = 3
+|P_2(2)| = 4
+|P_3(2)| = 5
+|P_4(2)| = 6
+|P_5(2)| = 7
+|P_0(3)| = 3
+|P_1(3)| = 7
+|P_2(3)| = 18
+|P_3(3)| = 81
+|P_4(3)| = 8569
+|P_0(4)| = 4
+|P_1(4)| = 15
+|P_2(4)| = 166
+width(P_j(3)), j=0..3: [3, 3, 4, 7]
+Poljak's antichain {down(12), down(13), down(23), {1},{2},{3}} found in P_2(3)
+T_0..T_3 = [4, 6, 20, 184756]
+tower bound T_i >= tow(i+1) checked for i <= 3; induction step 2^x >= 4x+2 holds for x >= 5
+largest layer of P_4(3): 235 down-sets of P_3(3) with exactly 39 elements, so |P_5(3)| >= 2^235 - 1
+check_posets: OK
+== check_sizes
+K=7   j=1  blocks [31]                                     size 187          ratio 2.69
+K=8   j=2  blocks [43, 295]                                size 88796        ratio 5.48
+K=18  j=2  blocks [273, 4625]                              size 21464626     ratio 5.84
+K=4   j=1  blocks [7]                                      size 22           ratio 2.23
+K=15  j=1  blocks [183]                                    size 2563         ratio 2.90
+K=10  j=2  blocks [73, 649]                                size 426394       ratio 5.63
+K=81 j=3 size 1.03e+19, K=166 j=2 size 1.99e+13
+Appendix B: K=4 j=1 refined 12 (Theorem 6.4: 22)
+Appendix B: K=7 j=1 refined 77 (Theorem 6.4: 187)
+Appendix B: K=8 j=2 refined 14484 (Theorem 6.4: 88796)
+Appendix B: K=10 j=2 refined 70558 (Theorem 6.4: 426394)
+Appendix B: K=18 j=2 refined 3591642 (Theorem 6.4: 21464626)
+cheaper top: K=7 j=2 at most 3685 vertices
+cheaper top: K=8 j=2 at most 7176 vertices
+cheaper top: K=10 j=2 at most 20944 vertices
+n=2^49: Theorem 6.4 forces 31, Theorem 8.5(ii) forces 30
+n=2^50: Theorem 6.4 forces 33, Theorem 8.5(ii) forces 34
+n=2^53: Appendix B instances force 51, Theorem 8.5(ii) forces 49
+n=2^54: Appendix B instances force 54, Theorem 8.5(ii) forces 55
+check_sizes: OK
+== check_thresholds_uniform
+k=3   2^406 <= n <= 2^65536    j0=6: min_j f_j(log2 n = 406) = 0.0007 at j = 6
+k=3   2^65536 < n <= tow(6)    j0=7: min_j f_j(log2 n = 65537) = 895.8894 at j = 7
+k=>=4 2^201 <= n <= 2^65536    j0=4: min_j f_j(log2 n = 201) = 0.0078 at j = 4
+k=>=4 2^65536 < n <= tow(6)    j0=5: min_j f_j(log2 n = 65537) = 1545.6848 at j = 5
+k=3: f_6(log2 n = 405) = -0.0137 < 0 (the threshold cannot be halved)
+k=>=4: f_4(log2 n = 200) = -0.0188 < 0 (the threshold cannot be halved)
+k=3, j=5: left side of (A.1) >= n^(1/8) for every integer log2 n in [146, 65536]; fails at 145 (-0.0058)
+check_thresholds_uniform: OK
+== uniform_tower
+m= 12 j=1 first_fit  plays= 60 meanC= 12.00 minC= 12 bound= 1.28 meanH_t=0.0000 (<=0.25)
+m= 12 j=1 least_used plays= 60 meanC= 12.00 minC= 12 bound= 1.28 meanH_t=0.0000 (<=0.25)
+m= 12 j=1 most_used  plays= 60 meanC= 12.00 minC= 12 bound= 1.28 meanH_t=0.0000 (<=0.25)
+m= 12 j=1 hashed     plays= 60 meanC=  9.62 minC=  9 bound= 1.28 meanH_t=0.0000 (<=0.25)
+m= 24 j=1 first_fit  plays= 30 meanC= 24.00 minC= 24 bound= 2.20 meanH_t=0.0000 (<=0.25)
+m= 24 j=1 least_used plays= 30 meanC= 24.00 minC= 24 bound= 2.20 meanH_t=0.0000 (<=0.25)
+m= 24 j=1 most_used  plays= 30 meanC= 24.00 minC= 24 bound= 2.20 meanH_t=0.0000 (<=0.25)
+m= 24 j=1 hashed     plays= 30 meanC= 14.33 minC= 13 bound= 2.20 meanH_t=0.0000 (<=0.25)
+m= 10 j=2 first_fit  plays= 20 meanC= 10.00 minC= 10 bound= 1.12 meanH_t=0.0000 (<=0.25)
+m= 10 j=2 least_used plays= 20 meanC= 10.00 minC= 10 bound= 1.12 meanH_t=0.0000 (<=0.25)
+m= 10 j=2 most_used  plays= 20 meanC= 10.00 minC= 10 bound= 1.12 meanH_t=0.0000 (<=0.25)
+m= 10 j=2 hashed     plays= 20 meanC=  9.80 minC=  9 bound= 1.12 meanH_t=0.0000 (<=0.25)
+m= 14 j=2 first_fit  plays=  8 meanC= 14.00 minC= 14 bound= 1.44 meanH_t=0.0000 (<=0.25)
+m= 14 j=2 least_used plays=  8 meanC= 14.00 minC= 14 bound= 1.44 meanH_t=0.0000 (<=0.25)
+m= 14 j=2 most_used  plays=  8 meanC= 14.00 minC= 14 bound= 1.44 meanH_t=0.0000 (<=0.25)
+m= 14 j=2 hashed     plays=  8 meanC= 10.88 minC= 10 bound= 1.44 meanH_t=0.0000 (<=0.25)
+part 1: all per-play identities and inequalities hold
+m=  8 j=1 b=0.25 mixed      plays= 40 meanC=  5.35 mean sum_t H_t= 7.7750 max=11.0000 min slack in (8.1)= 6.0000 (>=0)
+m=  8 j=1 b=0.25 hashed     plays= 40 meanC=  8.47 mean sum_t H_t=21.4250 max=25.0000 min slack in (8.1)=22.7500 (>=0)
+m=  8 j=1 b=0.25 first_fit  plays= 40 meanC=  8.00 mean sum_t H_t= 0.0000 max= 0.0000 min slack in (8.1)= 3.7500 (>=0)
+m=  8 j=1 b=0.50 mixed      plays= 40 meanC=  5.55 mean sum_t H_t= 4.4250 max= 8.0000 min slack in (8.1)= 4.2500 (>=0)
+m=  8 j=1 b=0.50 hashed     plays= 40 meanC=  8.62 mean sum_t H_t= 8.4500 max=12.0000 min slack in (8.1)=11.7500 (>=0)
+m=  8 j=1 b=0.50 first_fit  plays= 40 meanC=  8.00 mean sum_t H_t= 0.0000 max= 0.0000 min slack in (8.1)= 5.7500 (>=0)
+m=  8 j=1 b=1.00 mixed      plays= 40 meanC=  5.42 mean sum_t H_t= 0.5750 max= 3.0000 min slack in (8.1)= 2.7500 (>=0)
+m=  8 j=1 b=1.00 hashed     plays= 40 meanC=  8.47 mean sum_t H_t= 0.5750 max= 2.0000 min slack in (8.1)= 9.7500 (>=0)
+m=  8 j=1 b=1.00 first_fit  plays= 40 meanC=  8.00 mean sum_t H_t= 0.0000 max= 0.0000 min slack in (8.1)= 9.7500 (>=0)
+m=  8 j=2 b=0.25 mixed      plays= 12 meanC=  5.75 mean sum_t H_t=10.1146 max=11.2500 min slack in (8.1)=10.0000 (>=0)
+m=  8 j=2 b=0.25 hashed     plays= 12 meanC=  9.25 mean sum_t H_t=23.4948 max=24.6875 min slack in (8.1)=27.0625 (>=0)
+m=  8 j=2 b=0.25 first_fit  plays= 12 meanC=  8.00 mean sum_t H_t= 0.0000 max= 0.0000 min slack in (8.1)= 3.7500 (>=0)
+m=  8 j=2 b=0.50 mixed      plays= 12 meanC=  5.67 mean sum_t H_t= 6.2448 max= 7.5625 min slack in (8.1)= 6.9375 (>=0)
+m=  8 j=2 b=0.50 hashed     plays= 12 meanC=  9.25 mean sum_t H_t=10.5625 max=11.3125 min slack in (8.1)=16.6875 (>=0)
+m=  8 j=2 b=0.50 first_fit  plays= 12 meanC=  8.00 mean sum_t H_t= 0.0000 max= 0.0000 min slack in (8.1)= 5.7500 (>=0)
+m=  8 j=2 b=1.00 mixed      plays= 12 meanC=  5.67 mean sum_t H_t= 1.7292 max= 2.3125 min slack in (8.1)= 4.8125 (>=0)
+m=  8 j=2 b=1.00 hashed     plays= 12 meanC=  9.17 mean sum_t H_t= 0.0469 max= 0.2500 min slack in (8.1)=11.7500 (>=0)
+m=  8 j=2 b=1.00 first_fit  plays= 12 meanC=  8.00 mean sum_t H_t= 0.0000 max= 0.0000 min slack in (8.1)= 9.7500 (>=0)
+part 1 (heavy colours): (8.1) holds on every play, with positive sum_t H_t
+c= 1 u_c=1.1607 exp(-u)=0.31326 prod(1-p)=0.22388 empirical=0.22505 ok
+c= 2 u_c=0.9770 exp(-u)=0.37642 prod(1-p)=0.28719 empirical=0.28377 ok
+c= 3 u_c=1.1913 exp(-u)=0.30382 prod(1-p)=0.21702 empirical=0.21840 ok
+c= 4 u_c=1.1722 exp(-u)=0.30969 prod(1-p)=0.22392 empirical=0.22542 ok
+c= 5 u_c=1.1314 exp(-u)=0.32259 prod(1-p)=0.23266 empirical=0.23167 ok
+c= 6 u_c=0.9082 exp(-u)=0.40326 prod(1-p)=0.32030 empirical=0.31803 ok
+c= 7 u_c=0.9477 exp(-u)=0.38763 prod(1-p)=0.29621 empirical=0.29797 ok
+c= 8 u_c=0.9043 exp(-u)=0.40481 prod(1-p)=0.31568 empirical=0.31845 ok
+eq (1) consistent
+uniform_tower: OK
+== exhaustive
+(K,j)=(4,1): forced against every algorithm: True; longest play 22 vertices; 21 memo states
+(K,j)=(3,2): forced against every algorithm: True; longest play 31 vertices; 29 memo states
+(K,j)=(4,2): forced against every algorithm: True; longest play 400 vertices; 4379 memo states
+exhaustive: OK
+== static_sat
+k=3 j=1 m=7   minimal tower:    22 vertices     41 edges  3-colourable: True
+k=3 j=1 m=8   minimal tower:    29 vertices     63 edges  3-colourable: False
+k=4 j=1 m=15  minimal tower:   106 vertices    469 edges  4-colourable: True
+k=4 j=1 m=16  minimal tower:   121 vertices    575 edges  4-colourable: False
+k=3 j=2 m=18  minimal tower:   834 vertices   3213 edges  3-colourable: True
+k=3 j=2 m=19  minimal tower:   988 vertices   4047 edges  3-colourable: False
+static_sat: OK
+== flow_adversary
+m=2: the flow adversary forces floor(m/2)+1 = 2 colours against every algorithm: True (2 states)
+m=3: the flow adversary forces floor(m/2)+1 = 2 colours against every algorithm: True (2 states)
+m=4: the flow adversary forces floor(m/2)+1 = 3 colours against every algorithm: True (9 states)
+m=5: the flow adversary forces floor(m/2)+1 = 3 colours against every algorithm: True (12 states)
+m=6: the flow adversary forces floor(m/2)+1 = 4 colours against every algorithm: True (264 states)
+m=7: the flow adversary forces floor(m/2)+1 = 4 colours against every algorithm: True (593 states)
+m=8: the flow adversary forces floor(m/2)+1 = 5 colours against every algorithm: True (59379 states)
+m=9: the flow adversary forces floor(m/2)+1 = 5 colours against every algorithm: True (226371 states)
+flow_adversary: OK
+== simulate_adversary
+K=4  j=1 k=3 first_fit    forced 4 colours with 22      vertices (bound 22), 24 edges, 3-colouring verified
+K=4  j=1 k=3 least_used   forced 4 colours with 22      vertices (bound 22), 24 edges, 3-colouring verified
+K=4  j=1 k=3 most_used    forced 4 colours with 22      vertices (bound 22), 24 edges, 3-colouring verified
+K=4  j=1 k=3 block_spread forced 4 colours with 22      vertices (bound 22), 24 edges, 3-colouring verified
+K=4  j=1 k=3 random1      forced 4 colours with 22      vertices (bound 22), 24 edges, 3-colouring verified
+K=4  j=1 k=3 random2      forced 4 colours with 22      vertices (bound 22), 24 edges, 3-colouring verified
+K=7  j=1 k=3 first_fit    forced 7 colours with 187     vertices (bound 187), 471 edges, 3-colouring verified
+K=7  j=1 k=3 least_used   forced 7 colours with 187     vertices (bound 187), 471 edges, 3-colouring verified
+K=7  j=1 k=3 most_used    forced 7 colours with 187     vertices (bound 187), 471 edges, 3-colouring verified
+K=7  j=1 k=3 block_spread forced 7 colours with 187     vertices (bound 187), 471 edges, 3-colouring verified
+K=7  j=1 k=3 random1      forced 7 colours with 187     vertices (bound 187), 471 edges, 3-colouring verified
+K=7  j=1 k=3 random2      forced 7 colours with 187     vertices (bound 187), 471 edges, 3-colouring verified
+K=5  j=2 k=3 first_fit    forced 5 colours with 2549    vertices (bound 2549), 3826 edges, 3-colouring verified
+K=5  j=2 k=3 least_used   forced 5 colours with 2549    vertices (bound 2549), 3826 edges, 3-colouring verified
+K=5  j=2 k=3 most_used    forced 5 colours with 2549    vertices (bound 2549), 3826 edges, 3-colouring verified
+K=5  j=2 k=3 block_spread forced 5 colours with 2549    vertices (bound 2549), 3826 edges, 3-colouring verified
+K=5  j=2 k=3 random1      forced 5 colours with 2549    vertices (bound 2549), 3826 edges, 3-colouring verified
+K=5  j=2 k=3 random2      forced 5 colours with 2549    vertices (bound 2549), 3826 edges, 3-colouring verified
+K=8  j=2 k=3 first_fit    forced 8 colours with 88796   vertices (bound 88796), 266392 edges, 3-colouring verified
+K=8  j=2 k=3 least_used   forced 8 colours with 88796   vertices (bound 88796), 266392 edges, 3-colouring verified
+K=8  j=2 k=3 most_used    forced 8 colours with 88796   vertices (bound 88796), 266392 edges, 3-colouring verified
+K=8  j=2 k=3 block_spread forced 8 colours with 88796   vertices (bound 88796), 266392 edges, 3-colouring verified
+K=8  j=2 k=3 random1      forced 8 colours with 88796   vertices (bound 88796), 266392 edges, 3-colouring verified
+K=8  j=2 k=3 random2      forced 8 colours with 88796   vertices (bound 88796), 266392 edges, 3-colouring verified
+K=10 j=2 k=3 first_fit    forced 10 colours with 426394  vertices (bound 426394), 1705581 edges, 3-colouring verified
+K=10 j=2 k=3 least_used   forced 10 colours with 426394  vertices (bound 426394), 1705581 edges, 3-colouring verified
+K=10 j=2 k=3 most_used    forced 10 colours with 426394  vertices (bound 426394), 1705581 edges, 3-colouring verified
+K=10 j=2 k=3 block_spread forced 10 colours with 426394  vertices (bound 426394), 1705581 edges, 3-colouring verified
+K=10 j=2 k=3 random1      forced 10 colours with 426394  vertices (bound 426394), 1705581 edges, 3-colouring verified
+K=10 j=2 k=3 random2      forced 10 colours with 426394  vertices (bound 426394), 1705581 edges, 3-colouring verified
+K=15 j=1 k=4 first_fit    forced 15 colours with 2563    vertices (bound 2563), 16667 edges, 4-colouring verified
+K=15 j=1 k=4 least_used   forced 15 colours with 2563    vertices (bound 2563), 16667 edges, 4-colouring verified
+K=15 j=1 k=4 most_used    forced 15 colours with 2563    vertices (bound 2563), 16667 edges, 4-colouring verified
+K=15 j=1 k=4 block_spread forced 15 colours with 2563    vertices (bound 2563), 16667 edges, 4-colouring verified
+K=15 j=1 k=4 random1      forced 15 colours with 2563    vertices (bound 2563), 16667 edges, 4-colouring verified
+K=15 j=1 k=4 random2      forced 15 colours with 2563    vertices (bound 2563), 16667 edges, 4-colouring verified
+simulate_adversary: OK
+== oblivious_examples
+instance 1: K=7, one level, block 150: vertices 1050, failure <= 0.084914, success >= 0.915086
+instance 2: K=8, two levels, blocks 245 and 27293: vertices 53494280, failure <= 0.093989 (top 0.044124 + lower 0.049865), success >= 0.906011, expected colours >= 7.3421
+colourability: K=7 <= |P_1(3)| = 7 and K=8 <= |P_2(3)| = 18 (Corollary 5.4)
+oblivious_examples OK
+== li_recursion
+K=3                                log2 N = 27.645434      plotted 27.645434
+K=4                                log2 N = 34.971556      plotted 34.971556
+K=5                                log2 N = 36.102285      plotted 36.102285
+K=8                                log2 N = 47.573306      plotted 47.573306
+K=16                               log2 N = 71.999890      plotted 71.99989
+K=100                              log2 N = 199.677878     plotted 199.67788
+K=1000                             log2 N = 381.096406     plotted 381.09641
+K=65536                            log2 N = 1039.000000    plotted 1039.0
+K=1048583                          log2 N = 1719.769856    plotted 1719.7699
+K=4294967296                       log2 N = 5179.999692    plotted 5179.9997
+K=18446744073709551616             log2 N = 26053.000000   plotted 26053.0
+K=1267650600228229401496703205376  log2 N = 84798.648816   plotted 84798.649
+li_recursion OK
+== oblivious_dp (Appendix C and the table of Appendix D.5)
+K=4 R=1 best escape 1 (1.000000)  First-Fit 1
+K=4 R=2 best escape 1 (1.000000)  First-Fit 1
+K=4 R=3 best escape 1 (1.000000)  First-Fit 5/6
+K=4 R=4 best escape 263/324 (0.811728)  First-Fit 11/18
+K=4 R=5 best escape 1211/1944 (0.622942)  First-Fit 91/216
+K=4 R=6 best escape 1735/3888 (0.446245)  First-Fit 61/216
+K=4 R=7 best escape 7343/23328 (0.314772)  First-Fit 485/2592
+K=4 R=8 best escape 90857/419904 (0.216376)  First-Fit 2881/23328
+raw game tree = DP for K=3, R<=5 and K=4, R<=3
+oblivious_dp OK
+== oblivious_dp_second (independent implementation, R = 1..7)
+K=4 R=1: W_opt = 1 = 1   W_FF = 1   union bound = 1
+K=4 R=2: W_opt = 1 = 1   W_FF = 1   union bound = 1
+K=4 R=3: W_opt = 1 = 1   W_FF = 0.833333   union bound = 1
+K=4 R=4: W_opt = 263/324 = 0.811728   W_FF = 0.611111   union bound = 1
+K=4 R=5: W_opt = 1211/1944 = 0.622942   W_FF = 0.421296   union bound = 1
+K=4 R=6: W_opt = 1735/3888 = 0.446245   W_FF = 0.282407   union bound = 1
+K=4 R=7: W_opt = 7343/23328 = 0.314772   W_FF = 0.187114   union bound = 1
+oblivious_dp_second OK (agrees with oblivious_dp.py for R = 1..7)
+== top_block (Theorem D.4)
+top_block_first K=4: no adversary forces 4 colours with |sigma(v_1)| <= C(K-1,2) = 3  OK
+top_block_first K=5: no adversary forces 5 colours with |sigma(v_1)| <= C(K-1,2) = 6  OK
+top_block_first K=6: no adversary forces 6 colours with |sigma(v_1)| <= C(K-1,2) = 10  OK
+top_block_first K=7: no adversary forces 7 colours with |sigma(v_1)| <= C(K-1,2) = 15  OK
+top_block_any K=4 s=1: no adversary forces 4 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=4 s=2: no adversary forces 4 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=4 s=3: no adversary forces 4 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=5 s=1: no adversary forces 5 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=5 s=2: no adversary forces 5 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=5 s=3: no adversary forces 5 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=5 s=4: no adversary forces 5 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=6 s=1: no adversary forces 6 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=6 s=2: no adversary forces 6 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=6 s=3: no adversary forces 6 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=6 s=4: no adversary forces 6 colours with |sigma(v_s)| <= C(K-s,2)  OK
+top_block_any K=6 s=5: no adversary forces 6 colours with |sigma(v_s)| <= C(K-s,2)  OK
+== one-level values V(m) (Appendix D.3)
+A: m=4 C=3 sizes=3 2 1 1  adversary_forces_4=0 advNodes=8 algNodes=3 ttHit=0 leaf=5 time=0.00s
+A: m=4 C=2 sizes=3 2 1 1  adversary_forces_3=1 advNodes=10 algNodes=4 ttHit=0 leaf=5 time=0.00s
+A: m=5 C=4 sizes=4 3 2 1 1  adversary_forces_5=0 advNodes=14 algNodes=6 ttHit=1 leaf=7 time=0.00s
+A: m=5 C=3 sizes=4 3 2 1 1  adversary_forces_4=1 advNodes=49 algNodes=19 ttHit=5 leaf=21 time=0.00s
+A: m=6 C=4 sizes=5 4 3 2 1 1  adversary_forces_5=0 advNodes=114 algNodes=55 ttHit=15 leaf=53 time=0.00s
+A: m=6 C=3 sizes=5 4 3 2 1 1  adversary_forces_4=1 advNodes=50 algNodes=20 ttHit=5 leaf=21 time=0.00s
+A: m=7 C=5 sizes=6 5 4 3 2 1 1  adversary_forces_6=0 advNodes=124 algNodes=60 ttHit=18 leaf=55 time=0.00s
+A: m=7 C=4 sizes=6 5 4 3 2 1 1  adversary_forces_5=1 advNodes=519 algNodes=235 ttHit=159 leaf=156 time=0.00s
+A: m=8 C=6 sizes=7 6 5 4 3 2 1 1  adversary_forces_7=0 advNodes=136 algNodes=66 ttHit=22 leaf=57 time=0.00s
+A: m=8 C=5 sizes=7 6 5 4 3 2 1 1  adversary_forces_6=1 advNodes=10100 algNodes=5656 ttHit=5791 leaf=1749 time=0.05s
+A: m=9 C=6 sizes=8 7 6 5 4 3 2 1 1  adversary_forces_7=0 advNodes=15770 algNodes=10193 ttHit=9143 leaf=3662 time=0.08s
+A: m=9 C=5 sizes=8 7 6 5 4 3 2 1 1  adversary_forces_6=1 advNodes=10101 algNodes=5657 ttHit=5791 leaf=1749 time=0.06s
+A: m=10 C=7 sizes=9 8 7 6 5 4 3 2 1 1  adversary_forces_8=0 advNodes=15786 algNodes=10201 ttHit=9149 leaf=3664 time=0.08s
+A: m=10 C=6 sizes=9 8 7 6 5 4 3 2 1 1  adversary_forces_7=1 advNodes=360218 algNodes=343995 ttHit=391475 leaf=21895 time=3.35s
+B: m=9 C=5 sizes=8 7 6 5 4 3 2 1 1  adversary_forces_6=1 nodes=107335 memo=46961
+B: m=10 C=6 sizes=9 8 7 6 5 4 3 2 1 1  adversary_forces_7=1 nodes=16410217 memo=3803691
+one_level_values OK: V(4..10) = 3 4 4 5 6 6 7; V(11) = 7 by monotonicity and the m = 11 certificate
+== certificates
+dag_k3_C1.gen.txt: OK
+dag_k3_C2.gen.txt: OK
+dag_k3_C3.gen.txt: OK
+dag_k3_C4.gen.txt: OK
+dag_k3_C5.gen.txt: OK
+dag_k3_C6.gen.txt: OK
+dag_k3_C7.gen.txt: OK
+dag_k3_C8.gen.txt: OK
+dag_k3_C9.gen.txt: OK
+dag_k4_C1.gen.txt: OK
+dag_k4_C2.gen.txt: OK
+dag_k4_C3.gen.txt: OK
+dag_k4_C4.gen.txt: OK
+dag_k4_C5.gen.txt: OK
+dag_k4_C6.gen.txt: OK
+dag_k4_C7.gen.txt: OK
+dag_k4_C8.gen.txt: OK
+dag_k4_C9.gen.txt: OK
+dag_k4_C10.gen.txt: OK
+dag_k5_C1.gen.txt: OK
+dag_k5_C2.gen.txt: OK
+dag_k5_C3.gen.txt: OK
+dag_k5_C4.gen.txt: OK
+dag_k5_C5.gen.txt: OK
+dag_k5_C6.gen.txt: OK
+dag_k5_C7.gen.txt: OK
+dag_k5_C8.gen.txt: OK
+dag_k5_C9.gen.txt: OK
+dag_k5_C10.gen.txt: OK
+dag_k5_C11.gen.txt: OK
+dag_k5_C12.gen.txt: OK
+dag_k6_C1.gen.txt: OK
+dag_k6_C2.gen.txt: OK
+dag_k6_C3.gen.txt: OK
+dag_k6_C4.gen.txt: OK
+dag_k6_C5.gen.txt: OK
+dag_k6_C6.gen.txt: OK
+dag_k6_C7.gen.txt: OK
+dag_k6_C8.gen.txt: OK
+dag_k6_C9.gen.txt: OK
+dag_k6_C10.gen.txt: OK
+dag_k6_C11.gen.txt: OK
+dag_k6_C12.gen.txt: OK
+dag_k6_C13.gen.txt: OK
+one_m4_C2_ADV.txt: OK
+one_m4_C3_ALG.txt: OK
+one_m5_C3_ADV.txt: OK
+one_m5_C4_ALG.txt: OK
+one_m6_C3_ADV.txt: OK
+one_m6_C4_ALG.txt: OK
+one_m7_C4_ADV.txt: OK
+one_m7_C5_ALG.txt: OK
+one_m8_C5_ADV.txt: OK
+one_m8_C6_ALG.txt: OK
+one_m9_C5_ADV.txt: OK
+one_m9_C6_ALG.txt: OK
+one_m10_C7_ALG.txt: OK
+one_m11_C7_ALG.txt: OK
+check_adversary_dag.py: OK
+check_one_level.cpp: OK
+OK dag_k3_C1.gen.txt [dag]: k=3 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k3_C2.gen.txt [dag]: k=3 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k3_C3.gen.txt [dag]: k=3 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k3_C4.gen.txt [dag]: k=3 forest=0: the adversary forces 4 colours with at most 5 vertices (height 5; lemmas 5, P 5, W 2, R 5, colourings tested 7)
+OK dag_k3_C5.gen.txt [dag]: k=3 forest=0: the adversary forces 5 colours with at most 7 vertices (height 7; lemmas 11, P 11, W 6, R 11, colourings tested 20)
+OK dag_k3_C6.gen.txt [dag]: k=3 forest=0: the adversary forces 6 colours with at most 9 vertices (height 9; lemmas 22, P 22, W 10, R 29, colourings tested 62)
+OK dag_k3_C7.gen.txt [dag]: k=3 forest=0: the adversary forces 7 colours with at most 11 vertices (height 11; lemmas 48, P 48, W 24, R 72, colourings tested 195)
+OK dag_k3_C8.gen.txt [dag]: k=3 forest=0: the adversary forces 8 colours with at most 13 vertices (height 13; lemmas 336, P 336, W 207, R 501, colourings tested 1923)
+OK dag_k3_C9.gen.txt [dag]: k=3 forest=0: the adversary forces 9 colours with at most 15 vertices (height 15; lemmas 2863, P 2863, W 1809, R 4269, colourings tested 20593)
+OK dag_k4_C10.gen.txt [dag]: k=4 forest=0: the adversary forces 10 colours with at most 16 vertices (height 16; lemmas 824, P 824, W 601, R 1206, colourings tested 3289)
+OK dag_k4_C1.gen.txt [dag]: k=4 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k4_C2.gen.txt [dag]: k=4 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k4_C3.gen.txt [dag]: k=4 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k4_C4.gen.txt [dag]: k=4 forest=0: the adversary forces 4 colours with at most 4 vertices (height 4; lemmas 4, P 4, W 1, R 3, colourings tested 3)
+OK dag_k4_C5.gen.txt [dag]: k=4 forest=0: the adversary forces 5 colours with at most 6 vertices (height 6; lemmas 6, P 6, W 2, R 6, colourings tested 8)
+OK dag_k4_C6.gen.txt [dag]: k=4 forest=0: the adversary forces 6 colours with at most 8 vertices (height 8; lemmas 11, P 11, W 5, R 12, colourings tested 21)
+OK dag_k4_C7.gen.txt [dag]: k=4 forest=0: the adversary forces 7 colours with at most 10 vertices (height 10; lemmas 22, P 22, W 11, R 25, colourings tested 51)
+OK dag_k4_C8.gen.txt [dag]: k=4 forest=0: the adversary forces 8 colours with at most 12 vertices (height 12; lemmas 41, P 41, W 18, R 54, colourings tested 122)
+OK dag_k4_C9.gen.txt [dag]: k=4 forest=0: the adversary forces 9 colours with at most 14 vertices (height 14; lemmas 208, P 208, W 136, R 315, colourings tested 842)
+OK dag_k5_C10.gen.txt [dag]: k=5 forest=0: the adversary forces 10 colours with at most 15 vertices (height 15; lemmas 149, P 149, W 91, R 178, colourings tested 525)
+OK dag_k5_C11.gen.txt [dag]: k=5 forest=0: the adversary forces 11 colours with at most 17 vertices (height 17; lemmas 460, P 460, W 299, R 569, colourings tested 2017)
+OK dag_k5_C12.gen.txt [dag]: k=5 forest=0: the adversary forces 12 colours with at most 19 vertices (height 19; lemmas 1461, P 1461, W 1026, R 1955, colourings tested 7066)
+OK dag_k5_C1.gen.txt [dag]: k=5 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k5_C2.gen.txt [dag]: k=5 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k5_C3.gen.txt [dag]: k=5 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k5_C4.gen.txt [dag]: k=5 forest=0: the adversary forces 4 colours with at most 4 vertices (height 4; lemmas 4, P 4, W 1, R 3, colourings tested 3)
+OK dag_k5_C5.gen.txt [dag]: k=5 forest=0: the adversary forces 5 colours with at most 5 vertices (height 5; lemmas 5, P 5, W 1, R 4, colourings tested 4)
+OK dag_k5_C6.gen.txt [dag]: k=5 forest=0: the adversary forces 6 colours with at most 7 vertices (height 7; lemmas 7, P 7, W 2, R 7, colourings tested 9)
+OK dag_k5_C7.gen.txt [dag]: k=5 forest=0: the adversary forces 7 colours with at most 9 vertices (height 9; lemmas 14, P 14, W 7, R 15, colourings tested 26)
+OK dag_k5_C8.gen.txt [dag]: k=5 forest=0: the adversary forces 8 colours with at most 11 vertices (height 11; lemmas 27, P 27, W 13, R 34, colourings tested 69)
+OK dag_k5_C9.gen.txt [dag]: k=5 forest=0: the adversary forces 9 colours with at most 13 vertices (height 13; lemmas 58, P 58, W 31, R 75, colourings tested 187)
+OK dag_k6_C10.gen.txt [dag]: k=6 forest=0: the adversary forces 10 colours with at most 14 vertices (height 14; lemmas 67, P 67, W 34, R 78, colourings tested 448)
+OK dag_k6_C11.gen.txt [dag]: k=6 forest=0: the adversary forces 11 colours with at most 16 vertices (height 16; lemmas 145, P 145, W 78, R 176, colourings tested 964)
+OK dag_k6_C12.gen.txt [dag]: k=6 forest=0: the adversary forces 12 colours with at most 18 vertices (height 18; lemmas 132, P 132, W 74, R 173, colourings tested 605)
+OK dag_k6_C13.gen.txt [dag]: k=6 forest=0: the adversary forces 13 colours with at most 20 vertices (height 20; lemmas 940, P 940, W 593, R 1157, colourings tested 4784)
+OK dag_k6_C1.gen.txt [dag]: k=6 forest=0: the adversary forces 1 colours with at most 1 vertices (height 1; lemmas 1, P 1, W 1, R 0, colourings tested 0)
+OK dag_k6_C2.gen.txt [dag]: k=6 forest=0: the adversary forces 2 colours with at most 2 vertices (height 2; lemmas 2, P 2, W 1, R 1, colourings tested 1)
+OK dag_k6_C3.gen.txt [dag]: k=6 forest=0: the adversary forces 3 colours with at most 3 vertices (height 3; lemmas 3, P 3, W 1, R 2, colourings tested 2)
+OK dag_k6_C4.gen.txt [dag]: k=6 forest=0: the adversary forces 4 colours with at most 4 vertices (height 4; lemmas 4, P 4, W 1, R 3, colourings tested 3)
+OK dag_k6_C5.gen.txt [dag]: k=6 forest=0: the adversary forces 5 colours with at most 5 vertices (height 5; lemmas 5, P 5, W 1, R 4, colourings tested 4)
+OK dag_k6_C6.gen.txt [dag]: k=6 forest=0: the adversary forces 6 colours with at most 6 vertices (height 6; lemmas 6, P 6, W 1, R 5, colourings tested 5)
+OK dag_k6_C7.gen.txt [dag]: k=6 forest=0: the adversary forces 7 colours with at most 8 vertices (height 8; lemmas 13, P 13, W 2, R 12, colourings tested 50)
+OK dag_k6_C8.gen.txt [dag]: k=6 forest=0: the adversary forces 8 colours with at most 10 vertices (height 10; lemmas 18, P 18, W 5, R 18, colourings tested 94)
+OK dag_k6_C9.gen.txt [dag]: k=6 forest=0: the adversary forces 9 colours with at most 12 vertices (height 12; lemmas 33, P 33, W 15, R 35, colourings tested 213)
+loaded 152 entries
+check one m=10 C=7 b=9 8 7 6 5 4 3 2 1 1  claim=algorithm_survives_with_7 result=VERIFIED visited=256 children=257 entries=152
+loaded 1169 entries
+check one m=11 C=7 b=10 9 8 7 6 5 4 3 2 1 1  claim=algorithm_survives_with_7 result=VERIFIED visited=2996 children=2998 entries=1169
+loaded 3 entries
+check one m=4 C=3 b=3 2 1 1  claim=algorithm_survives_with_3 result=VERIFIED visited=5 children=5 entries=3
+loaded 4 entries
+check one m=5 C=4 b=4 3 2 1 1  claim=algorithm_survives_with_4 result=VERIFIED visited=6 children=6 entries=4
+loaded 22 entries
+check one m=6 C=4 b=5 4 3 2 1 1  claim=algorithm_survives_with_4 result=VERIFIED visited=31 children=32 entries=22
+loaded 23 entries
+check one m=7 C=5 b=6 5 4 3 2 1 1  claim=algorithm_survives_with_5 result=VERIFIED visited=32 children=33 entries=23
+loaded 24 entries
+check one m=8 C=6 b=7 6 5 4 3 2 1 1  claim=algorithm_survives_with_6 result=VERIFIED visited=33 children=34 entries=24
+loaded 151 entries
+check one m=9 C=6 b=8 7 6 5 4 3 2 1 1  claim=algorithm_survives_with_6 result=VERIFIED visited=255 children=256 entries=151
+loaded 5 entries
+check one m=4 C=2 b=3 2 1 1  claim=adversary_forces_3 result=VERIFIED visited=7 children=6 entries=5
+loaded 22 entries
+check one m=5 C=3 b=4 3 2 1 1  claim=adversary_forces_4 result=VERIFIED visited=44 children=43 entries=22
+loaded 42 entries
+check one m=6 C=3 b=5 4 3 2 1 1  claim=adversary_forces_4 result=VERIFIED visited=69 children=68 entries=42
+loaded 446 entries
+check one m=7 C=4 b=6 5 4 3 2 1 1  claim=adversary_forces_5 result=VERIFIED visited=933 children=932 entries=446
+loaded 8392 entries
+check one m=8 C=5 b=7 6 5 4 3 2 1 1  claim=adversary_forces_6 result=VERIFIED visited=24409 children=24408 entries=8392
+loaded 41243 entries
+check one m=9 C=5 b=8 7 6 5 4 3 2 1 1  claim=adversary_forces_6 result=VERIFIED visited=92810 children=92809 entries=41243
+ALL CHECKS PASSED
